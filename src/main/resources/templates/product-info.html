@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products page</title>
+</head>
+<body>
+<h1>BUYSELL INFO</h1>
+
+<div>
+    <b>Name:</b> ${product.title} <br>
+    <b>Description:</b> ${product.description} <br>
+    <b>Price:</b> ${product.price} <br>
+    <b>City:</b> ${product.city} <br>
+    <b>Author:</b> ${product.author} <br>
+</div>
+
+<hr>
+
+<h3>Create New Object</h3>
+<form action="/product/delete" method="post">
+    <label for="deleted">Name:</label>
+    <input type="text" id="deleted" name="deleted" /><br>
+    <button type="submit">Delete Product</button>
+</form>
+</body>
+</html>
